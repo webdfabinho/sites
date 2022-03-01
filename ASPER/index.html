@@ -12,6 +12,15 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="icon" type="image/png" href="imgs/LOGO.png">
+
+		<script>
+			function conta_nao(){
+            let rep_nao = $("input[type=radio][value=não]:checked").length;
+            if (rep_nao == 3){
+            window.alert("Você selecionou não " + rep_nao + " vezes, isso quer dizer que precisa de uma consultoria. Feche esse questionário e nos envie uma mensagem atraves de nosso questionário." );
+            }
+        }
+    	</script>
 	</head>
 	
 	<body >
@@ -208,110 +217,164 @@
 				</div>
 				<h1 class="titulo">Auto Avaliação</h1>
 				<div class="divider"></div>
-				<p class="descricao">Responda ao questionário abaixo para a sua própria avaliação, ele não ficará gravado nem exposto aqui:</p>
+				<p class="descricao">Responda ao questionário abaixo para a sua própria avaliação, parasaberse precisa de uma consultoria 
+					financeira hoje mesmo, ele não ficará gravado nem exposto aqui:</p><BR>
 				
-				<form name="form1" id="form1" method="post" action="" >
-					1.	Sabe se os impostos pagos são corretos ou não adequados?
-					<input type="radio" id="sim" name="1" value="sim">
+				    <!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+    				CLIQUE AQUI PARA FAZER A AUTO AVALIAÇÃO.
+  					</button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Auto Avaliação</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p class="descricao">Responda às perguntas abaixo:</p>
+				
+            <form name="form1" id="form1" method="post" action="" >
+                <div class="row">
+                    <div class="col-sm">
+                1.	Sabe se os impostos pagos são corretos ou não adequados?
+                    </div>
+                    <div class="col-sm">
+                    <input type="radio" id="sim" name="1" value="sim" >
   					<label for="html">SIM</label>
-  					<input type="radio" id="não" name="1" value="não">
+  					<input type="radio" id="não" name="1" value="não" onChange='conta_nao()'>
   					<label for="css">NÃO</label><br>
-					2.	Paga ou pagou impostos a mais do que deveria/gostaria?
-					<input type="radio" id="sim" name="2" value="sim">
+                         </div>
+                        <div class="col-sm">
+                2.	Paga ou pagou impostos a mais do que deveria/gostaria?
+                </div>
+                <div class="col-sm">
+                <input type="radio" id="sim" name="2" value="sim">
   					<label for="html">SIM</label>
-  					<input type="radio" id="não" name="2" value="não">
+  					<input type="radio" id="não" name="2" value="não" onChange='conta_nao()'>
   					<label for="css">NÃO</label><br>
-					3.	O regime tributário da empresa é o ideal?
-					<input type="radio" id="sim" name="3" value="sim">
+                </div>
+                
+                3.	O regime tributário da empresa é o ideal?
+                <input type="radio" id="sim" name="3" value="sim">
   					<label for="html">SIM</label>
-  					<input type="radio" id="não" name="3" value="não">
+  					<input type="radio" id="não" name="3" value="não" onChange='conta_nao()'>
   					<label for="css">NÃO</label><br>
-					4.	Calcula os preços de venda corretamente?
-					<input type="radio" id="sim" name="4" value="sim">
+
+                4.	Calcula os preços de venda corretamente?
+                <input type="radio" id="sim" name="4" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="4" value="não">
   					<label for="css">NÃO</label><br>
-					5.	Conhece a sua rentabilidade por produto?
-					<input type="radio" id="sim" name="5" value="sim">
+
+                5.	Conhece a sua rentabilidade por produto?
+                <input type="radio" id="sim" name="5" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="5" value="não">
   					<label for="css">NÃO</label><br>
-					6.	Conhece os seus custos em detalhes?
-					<input type="radio" id="sim" name="6" value="sim">
+
+                6.	Conhece os seus custos em detalhes?
+                <input type="radio" id="sim" name="6" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="6" value="não">
   					<label for="css">NÃO</label><br>
-					7.	Revisa os seus custos regularmente?
-					<input type="radio" id="sim" name="7" value="sim">
+
+                7.	Revisa os seus custos regularmente?
+                <input type="radio" id="sim" name="7" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="7" value="não">
   					<label for="css">NÃO</label><br>
-					8.	Revisa processos e utiliza melhoria contínua?
-					<input type="radio" id="sim" name="8" value="sim">
+
+                8.	Revisa processos e utiliza melhoria contínua?
+                <input type="radio" id="sim" name="8" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="8" value="não">
   					<label for="css">NÃO</label><br>
-					9.	Estabelece e segue metas para resultados?
-					<input type="radio" id="sim" name="9" value="sim">
+
+                9.	Estabelece e segue metas para resultados?
+                <input type="radio" id="sim" name="9" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="9" value="não">
   					<label for="css">NÃO</label><br>
-					10.	Possui relatórios e índices de performance para tomadas de decisões?
-					<input type="radio" id="sim" name="10" value="sim">
+
+                10.	Possui relatórios e índices de performance para tomadas de decisões?
+                <input type="radio" id="sim" name="10" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="10" value="não">
   					<label for="css">NÃO</label><br>
-					11.	Sabe quanto vale a sua empresa para o caso de venda?
-					<input type="radio" id="sim" name="11" value="sim">
+
+                11.	Sabe quanto vale a sua empresa para o caso de venda?
+                <input type="radio" id="sim" name="11" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="11" value="não">
   					<label for="css">NÃO</label><br>
-					12.	Utiliza a contabilidade como ferramenta?
-					<input type="radio" id="sim" name="12" value="sim">
+
+                12.	Utiliza a contabilidade como ferramenta?
+                <input type="radio" id="sim" name="12" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="12" value="não">
   					<label for="css">NÃO</label><br>
-					13.	Faz análise de crédito dos clientes?
-					<input type="radio" id="sim" name="13" value="sim">
+
+                13.	Faz análise de crédito dos clientes?
+                <input type="radio" id="sim" name="13" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="13" value="não">
   					<label for="css">NÃO</label><br>
-					14.	Os clientes pagam em dia?
-					<input type="radio" id="sim" name="14" value="sim">
+
+                14.	Os clientes pagam em dia?
+                <input type="radio" id="sim" name="14" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="14" value="não">
   					<label for="css">NÃO</label><br>
-					15.	Utiliza o fluxo de caixa?
-					<input type="radio" id="sim" name="15" value="sim">
+
+                15.	Utiliza o fluxo de caixa?
+                <input type="radio" id="sim" name="15" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="15" value="não">
   					<label for="css">NÃO</label><br>
-					16.	Conhece a necessidade de caixa para os próximos 3 meses?
-					<input type="radio" id="sim" name="16" value="sim">
+
+                16.	Conhece a necessidade de caixa para os próximos 3 meses?
+                <input type="radio" id="sim" name="16" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="16" value="não">
   					<label for="css">NÃO</label><br>
-					17.	Sabe aplicar a sobra de caixa?
-					<input type="radio" id="sim" name="17" value="sim">
+
+                17.	Sabe aplicar a sobra de caixa?
+                <input type="radio" id="sim" name="17" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="17" value="não">
   					<label for="css">NÃO</label><br>
-					18.	Sabe como obter caixa quando necessário?
-					<input type="radio" id="sim" name="18" value="sim">
+
+                18.	Sabe como obter caixa quando necessário?
+                <input type="radio" id="sim" name="18" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="18" value="não">
   					<label for="css">NÃO</label><br>
-					19.	Sabe qual será o resultado contábil desde ano?
-					<input type="radio" id="sim" name="19" value="sim">
+
+                19.	Sabe qual será o resultado contábil desde ano?
+                <input type="radio" id="sim" name="19" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="19" value="não">
   					<label for="css">NÃO</label><br>
-					20.	Sabe qual será o resultado do contábil do próximo ano?
-					<input type="radio" id="sim" name="20" value="sim">
+
+                20.	Sabe qual será o resultado do contábil do próximo ano?
+                <input type="radio" id="sim" name="20" value="sim">
   					<label for="html">SIM</label>
   					<input type="radio" id="não" name="20" value="não">
   					<label for="css">NÃO</label><br>
-				</form>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
 			</div>
 			
 		</section>
