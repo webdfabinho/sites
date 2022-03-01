@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="css/especializati.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="icon" type="image/png" href="imgs/LOGO.png">
 	</head>
 	
@@ -56,7 +58,10 @@
 			<div class="container text-center">
 				
 				<article class="col-md-4 detalhe-sobre">
+					
 					<img src="imgs/icones-sobre/cursos-online-especializati.png" alt="Cursos Online" title="Cursos Online">
+
+
 					<h1 class="titulo-sobre">QUEM SOMOS</h1>
 					<p class="sobre">Somos uma empresa de consultoria empresarial com ampla experiência em assuntos de natureza tributária, 
 						financeira, controladoria e ERP nos mais variados segmentos da economia. Oferecemos consultorias personalizadas e 
@@ -95,9 +100,11 @@
 		
 		<section class="somos padding-10" id="01">
 			<div class="container text-center">
-				<div class="img_index">
+
+				<div class="w3-card">
 					<img src="imgs/quem_somos2.png" class="img-fluid fadeImg2">
 				</div>
+
 				<h1 class="titulo">QUEM SOMOS</h1>
 				<div class="divider"></div>
 				<p class="descricao">Há mais de 15 anos, a ASPER atua na gestão contábil, tributária, financeira e de processos nos mais variados 
@@ -128,7 +135,7 @@
 		
 		<section class="servicos padding-10" id="02">
 			<div class="container text-center">
-				<div class="img_index">
+				<div class="w3-card">
 					<img src="imgs/quem_somos.jpg" class="img-fluid fadeImg2">
 				</div>
 				<h1 class="titulo">SERVIÇOS</h1>
@@ -313,42 +320,45 @@
 	
 		<section class="contact contato" id="03">
 			<div class="container text-center">
-				<h1 class="titulo">Contato</h1>
+				
 				<div class="divider"></div>
-				<p class="descricao">Entre em contato e tenha todas as suas dúvidas respondidas<br>
-				Responderemos o mais rápido possível</p>
-						
-				<div class="container text-center">
-					<form class="formulario" id="form1" name="form1" method="post" action="enviar_email.php"> 
-						<p> Preencha corretamente os dados abaixo:</p>
-						
-						<div class="field">
-							<label for="nome">Seu Nome:*</label>
-							<input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+				<form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+					<h1 class="titulo">Contato</h1>
+					<p class="descricao">Entre em contato e tenha todas as suas dúvidas respondidas.<br>
+						Responderemos o mais rápido possível!</p>					 
+					<div class="w3-row w3-section">
+					  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+						<div class="w3-rest">
+						  <input class="w3-input w3-border" name="nome" type="text" placeholder="Nome">
 						</div>
-						
-						<div class="field">
-							<label for="telefone">Seu Telefone:*</label>
-							<input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+					</div>
+					
+					<div class="w3-row w3-section">
+					  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+						<div class="w3-rest">
+						  <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
 						</div>
-				
-						<div class="field">
-							<label for="email">Seu E-Mail:*</label>
-							<input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
-						</div>        
-						<div class="field radiobox">
-							<span>Deseja receber nossas novidades?*</span>
-							<input type="radio" name="novidades" id="novidades" value="sim" checked><label for="sim">Sim</label>
-							<input type="radio" name="novidades" id="novidades" value="nao"><label for="nao">Não</label>
+					</div>
+					
+					<div class="w3-row w3-section">
+					  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+						<div class="w3-rest">
+						  <input class="w3-input w3-border" name="telefone" type="text" placeholder="Telefone">
 						</div>
-						<div class="field">
-							<label for="mensagem">Sua mensagem:*</label>
-							<textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+					</div>
+
+					<div class="w3-row w3-section">
+					  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+						<div class="w3-rest">
+						  <input class="w3-input w3-border" name="mensagem" type="text" placeholder="Mensagem">
 						</div>
-				
-						<input type="submit" name="acao" value="Enviar">
-					</form>
-				</div>
+					</div>
+					
+					<p class="w3-center">
+					<button class="w3-button w3-section w3-blue w3-ripple" type="submit" name="acao" value="Enviar"> Enviar </button>
+					</p>
+				</form>
+									
 			</div>
 		</section>
 		<!--Contato-->
