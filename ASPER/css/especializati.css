@@ -3,6 +3,10 @@
 img.logo{max-width: 200px;}
 .clear{clear: both;}
 
+.box_text{
+    box-shadow: 14px 10px #fb5541;
+}
+
 .titulo{
     text-transform: uppercase;
     color: #062c9c;
