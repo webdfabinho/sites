@@ -1,43 +1,55 @@
-<!-- codigo cards -->
-		
-			<div class="container text-center">
-				
-				<div class="row">
-					<div class="column">
-						<img src="imgs/icones-sobre/quem_somos.png" width="150" height="150" alt="Quem Somos" title="Quem Somos">
-						<div class="card">
-						<h1 class="titulo-sobre">QUEM SOMOS</h1>
-						<p class="sobre">Somos uma empresa de consultoria empresarial com ampla experiência em assuntos de natureza tributária, 
-							financeira, controladoria e ERP nos mais variados segmentos da economia. Oferecemos consultorias personalizadas e 
-							diferenciadas a empresas nacionais e multinacionais, de pequeno, médio e grande porte de todo o país.</p>
-						</div>
-					</div>
-
-					<div class="column">
-						<img src="imgs/icones-sobre/vantagem.png" width="150" height="150"alt="vantagems" title="vantagens">
-						<div class="card">
-						<h1 class="titulo-sobre">VANTAGENS</h1>
-						<p class="sobre">Nossas principais vantagens são:
-						Assessoria qualificada e estratégica.<br>
-						Experiência e agilidade profissional adequada.<br>
-						"Know how" de grandes empresas<br> sem pagar mais por isso.<br>
-						Soluções customizadas ao seu negócio ou empresa.<br></p>		
-						</div>
-					</div>
-
-					<div class="column">
-						<img src="imgs/icones-sobre/serviços.png" width="150" height="150" alt="Serviços" title="Serviços">
-						<div class="card"><h1 class="titulo-sobre">SERVIÇOS</h1>
-							<p class="sobre">Confira alguns dos nosos serviços:
-
-						Área Tributária<br>
-						Área de Controladoria<br>
-						Área de Sistemas ERP<br>
-						​Área Financeira<br>
-						Serviços em conjunto com parceiros<br>
-						<a href="#02">Saiba mais!</a></p>	</div>
-					</div>
-					
-				</div>
-			</div>
-		
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Materialize CSS</title>
+</head>
+<body>    
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#"></a>
+            <a href="#" data-activates="menu-mobile" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+					<a href="index.html">HOME</a>
+				</li>
+				<li>
+					<a href="#01">QUEM SOMOS</a>
+				</li>
+				<li>
+					<a href="#02">SERVIÇOS</a>
+				</li>
+				<li>
+					<a href="#03">CONTATO</a>
+				</li>
+            </ul>
+            <ul class="side-nav" id="menu-mobile">
+				<li>
+					<a href="index.html">HOME</a>
+				</li>
+				<li>
+					<a href="#01">QUEM SOMOS</a>
+				</li>
+				<li>
+					<a href="#02">SERVIÇOS</a>
+				</li>
+				<li>
+					<a href="#03">CONTATO</a>
+				</li>
+            </ul>
+        </div>
+    </nav>
+          
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script>
+    $(function(){
+        $(".button-collapse").sideNav();
+    });
+    </script>
+</body>
+</html>

@@ -10,7 +10,7 @@ img.logo{max-width: 200px;}
 .titulo{
     text-transform: uppercase;
     color: #062c9c;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -132,7 +132,7 @@ a:hover{text-decoration: none !important;}
     background-color: #ea7c33;
     padding: 10px 24px;
     border-radius: 8px;
-    font-size: 26px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 .btn-saiba-mais:hover{
